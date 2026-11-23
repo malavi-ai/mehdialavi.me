@@ -4,7 +4,7 @@
    SURVEY_URLS  : link of each survey on the university-approved survey platform
    STUDY_INFO   : short participant information shown before the survey starts */
 window.SITE_CONFIG = {
-  WORKER_URL: "",
+  WORKER_URL: "https://forms.mehdialavi.me",
   BOOKING_URL: "",
   SURVEY_URLS: {
     shared: "https://mehdialavi90.limesurvey.net/436178"
