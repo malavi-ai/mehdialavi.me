@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Take part · Mehdi Alavi</title>
+<meta name="robots" content="noindex">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=Manrope:wght@400;600;700&family=JetBrains+Mono&display=swap">
+<style>
+:root{--gold:#D4AC65} body{background:#090908!important;color:#F2E9D8!important} a{color:#D8B674} button{accent-color:#D4AC65} 
+
+:root{--night:#07090F;--panel:#141A27;--edge:#232B3D;--text:#F2F4FA;--mute:#9AA4B8;--volt:#D4AC65;color-scheme:dark}
+*{box-sizing:border-box}
+body{margin:0;background:var(--night);color:var(--text);font-family:"Manrope",system-ui,sans-serif;font-size:17px;line-height:1.6}
+main{max-width:720px;margin:0 auto;padding:56px max(16px,env(safe-area-inset-left,0px)) 64px max(16px,env(safe-area-inset-right,0px))}
+a{color:var(--text)}
+.k{font-family:"JetBrains Mono",monospace;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:#E6CB98}
+h1{font-family:"Archivo",system-ui,sans-serif;font-stretch:125%;font-weight:800;font-size:clamp(30px,6vw,46px);line-height:1;text-transform:uppercase;margin:12px 0 28px}
+.card{background:var(--panel);border:1px solid var(--edge);border-radius:20px;padding:24px;display:grid;gap:14px}
+.card h2{font-size:14px;font-family:"JetBrains Mono",monospace;font-weight:400;color:var(--mute);margin:0;letter-spacing:.08em;text-transform:uppercase}
+.card p{margin:0}
+label{display:flex;gap:10px;align-items:flex-start;font-size:15px;margin-top:6px}
+input{width:20px;height:20px;margin-top:3px;accent-color:var(--volt);flex:none}
+button{font:inherit;font-weight:700;font-size:16px;padding:14px 22px;border-radius:999px;border:0;background:var(--volt);color:#fff;cursor:pointer;margin-top:6px}
+button:disabled{opacity:.45;cursor:not-allowed}
+.muted{color:var(--mute);font-size:14px}
+.err{color:#ff9b9b}
+</style>
+</head>
+<body>
+<main>
+  <a class="k" href="index.html" style="text-decoration:none">← mehdialavi.me</a>
+  <h1 id="title">Take part</h1>
+  <div class="card" id="info"></div>
+  <label for="ok"><input type="checkbox" id="ok"> I have read this information. I am 18 or older and I agree to take part voluntarily. I know I can stop at any time.</label>
+  <button id="go" disabled>Continue to the survey</button>
+  <p class="muted" id="note"></p>
+</main>
+<script src="config.js"></script>
+<script>
+(function(){
+  var C=window.SITE_CONFIG||{}, q=new URLSearchParams(location.search), study=q.get('study')||'shared', ref=q.get('r')||'';
+  var info=(C.STUDY_INFO||{})[study], url=(C.SURVEY_URLS||{})[study];
+  var box=document.getElementById('info'), go=document.getElementById('go'), ok=document.getElementById('ok'), note=document.getElementById('note');
+  if(!info||!url){box.innerHTML='<p class="err">This study is not open yet.</p><p class="muted">Please come back later, or write to us from the contact page.</p>';ok.disabled=true;return;}
+  document.getElementById('title').textContent=info.title;
+  function esc(s){return String(s).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+  box.innerHTML=[['Purpose',info.purpose],['Who can take part',info.who],['Time',info.time],['Your data',info.data],['Ethics',info.ethics],['Questions',info.contact]]
+    .map(function(r){return '<h2>'+r[0]+'</h2><p>'+esc(r[1])+'</p>'}).join('');
+  ok.addEventListener('change',function(){go.disabled=!ok.checked});
+  go.addEventListener('click',function(){
+    /* Only "started" is recorded, with the invitation reference, so reminders stop.
+       The reference is NOT passed to the survey: answers stay unlinked to the person. */
+    if(C.WORKER_URL && ref){
+      try{navigator.sendBeacon(C.WORKER_URL.replace(/\/$/,'')+'/event',new Blob([JSON.stringify({type:'survey_started',study:study,ref:ref})],{type:'application/json'}))}catch(e){}
+    }
+    /* Pass the source code (src) and language (lang) from the invitation link on to the survey. Falls back to src=web. */
+    var src=(q.get('src')||'').toLowerCase().replace(/[^a-z0-9_-]/g,'').slice(0,30)||'web';
+    var lang=(q.get('lang')||'').toLowerCase();
+    if(['en','hu','de','it','tr','pl','da'].indexOf(lang)<0) lang='';
+    var sep=url.indexOf('?')>-1?'&':'?';
+    location.href=url+sep+'src='+encodeURIComponent(src)+(lang?'&lang='+lang:'');
+  });
+})();
+</script>
+</body>
+</html>

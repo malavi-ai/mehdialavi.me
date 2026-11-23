@@ -1,0 +1,629 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Seyed Mehdi Alavi | Research, Leadership &amp; EMS Innovation</title>
+<meta name="theme-color" content="#090807">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<link rel="canonical" href="https://mehdialavi.me/">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Seyed Mehdi Alavi | Research · Strategy · Innovation">
+<meta property="og:description" content="From academic research to international EMS businesses: research, ventures, conference presentations and professional partnerships.">
+<meta property="og:url" content="https://mehdialavi.me/">
+<meta property="og:image" content="https://mehdialavi.me/img/social-preview.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="color-scheme" content="dark">
+<meta name="description" content="Seyed Mehdi Alavi — PhD Researcher, international entrepreneur and EMS industry leader. Discover research, publications, conferences, EMS Leader, Impulse and Fusion X1.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Cormorant+Garamond:wght@400;500;600;700&display=swap">
+<style>
+/* Layout: dark cinematic. Full-bleed portrait hero with the name set wide and heavy, an EMS impulse line as the signature, then a research hub (studies, surveys, interviews) before work, ventures and contact. Single dark look by choice. */
+:root{
+  --night:#07090F; --deck:#0E121C; --panel:#141A27; --edge:#232B3D;
+  --text:#F2F4FA; --mute:#9AA4B8; --volt:#5B86FF; --volt-2:#9DB6FF; --open:#FFB547;
+  --wide:"Archivo","Arial Black",system-ui,sans-serif;
+  --body:"Manrope","Segoe UI",system-ui,sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,Menlo,Consolas,monospace;
+  --maxw:1200px; color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--night);color:var(--text);font-family:var(--body);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--volt);outline-offset:3px;border-radius:6px}
+.wrap{max-width:var(--maxw);margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.k{font-family:var(--mono);font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--volt-2)}
+
+/* bar */
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:20;background:var(--night)}
+.bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:19;background:rgba(7,9,15,.72);backdrop-filter:blur(14px) saturate(140%);border-bottom:1px solid rgba(255,255,255,.06)}
+.bar .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:12px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;font-family:var(--wide);font-stretch:125%;font-weight:800;font-size:14px;letter-spacing:.06em}
+.brand svg{width:32px;height:32px;flex:none}
+.bar nav ul{display:flex;gap:2px;list-style:none;margin:0;padding:0}
+.bar nav a{display:block;text-decoration:none;font-size:14px;font-weight:600;padding:7px 12px;border-radius:999px;color:var(--mute)}
+.bar nav a:hover{color:var(--text);background:rgba(255,255,255,.06)}
+.bar nav a.cta{background:var(--volt);color:#fff}
+.bar nav a.cta:hover{background:#4673f5}
+@media (max-width:760px){.bar nav .opt{display:none}}
+
+/* hero */
+.hero{position:relative;overflow:hidden;border-bottom:1px solid var(--edge);margin-top:calc(-1 * env(safe-area-inset-top,0px));padding-top:env(safe-area-inset-top,0px)}
+.hero .ph{position:absolute;inset:0 0 0 auto;width:min(58%,760px)}
+.hero .ph img{width:100%;height:100%;object-fit:cover;object-position:50% 22%;display:block;filter:grayscale(.35) contrast(1.06)}
+.hero .ph::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,var(--night) 0%,rgba(7,9,15,.82) 22%,rgba(7,9,15,.25) 60%,rgba(7,9,15,.55) 100%),linear-gradient(0deg,var(--night) 0%,transparent 35%)}
+.hero .wrap{position:relative;padding-block:96px 36px;min-height:640px;display:flex;flex-direction:column;justify-content:flex-end}
+.hero h1{font-family:var(--wide);font-stretch:125%;font-weight:900;font-size:clamp(46px,9.6vw,138px);line-height:.86;letter-spacing:-.02em;margin:18px 0 0;text-transform:uppercase}
+.hero h1 span{display:block;font-weight:500;font-stretch:100%;font-size:.3em;letter-spacing:.08em;color:var(--mute);margin-bottom:.35em}
+.hero h1 em{font-style:normal;color:transparent;-webkit-text-stroke:2px var(--text)}
+.hero .lede{max-width:52ch;font-size:clamp(17px,1.9vw,21px);color:#C9D0DE;margin:26px 0 0}
+.btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+.btn{display:inline-flex;align-items:center;gap:10px;text-decoration:none;font-weight:700;font-size:15px;padding:13px 20px;border-radius:999px;border:1.5px solid var(--text);color:var(--text);background:transparent;cursor:pointer;font-family:var(--body)}
+.btn.solid{background:var(--volt);border-color:var(--volt);color:#fff}
+.btn:hover{transform:translateY(-1px)}
+.btn.solid:hover{background:#4673f5}
+.btn svg{width:16px;height:16px}
+.pulse{display:block;width:100%;height:auto;margin-top:46px;overflow:visible}
+.pulse .tr{fill:none;stroke:var(--volt);stroke-width:2.6;stroke-linejoin:round;filter:drop-shadow(0 0 6px rgba(91,134,255,.75))}
+.pulse .bl{stroke:rgba(255,255,255,.1);stroke-width:1}
+.pulse text{font-family:var(--mono);font-size:11px;fill:var(--mute)}
+@media (prefers-reduced-motion:no-preference){.pulse .tr{stroke-dasharray:3000;animation:draw 2.6s cubic-bezier(.3,.7,.2,1) both}@keyframes draw{from{stroke-dashoffset:3000}to{stroke-dashoffset:0}}}
+@media (max-width:760px){
+  .hero .ph{position:relative;width:100%;height:420px}
+  .hero .ph::after{background:linear-gradient(0deg,var(--night) 0%,rgba(7,9,15,.2) 55%,rgba(7,9,15,.5) 100%)}
+  .hero .wrap{min-height:0;padding-block:0 28px;margin-top:-140px}
+}
+.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border-top:1px solid var(--edge);margin-top:30px}
+.stats div{padding:20px 16px 4px;border-left:1px solid var(--edge)}
+.stats div:first-child{border-left:0;padding-left:0}
+.stats b{display:block;font-family:var(--wide);font-stretch:125%;font-weight:800;font-size:clamp(26px,3.6vw,42px);line-height:1;font-variant-numeric:tabular-nums}
+.stats span{display:block;font-size:13.5px;color:var(--mute);margin-top:8px}
+@media (max-width:640px){.stats{grid-template-columns:repeat(2,minmax(0,1fr))}.stats div:nth-child(3){border-left:0;padding-left:0}.stats div:nth-child(n+3){border-top:1px solid var(--edge)}}
+
+/* sections */
+section{padding-block:96px;border-bottom:1px solid var(--edge)}
+.head{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap;margin-bottom:40px}
+h2{font-family:var(--wide);font-stretch:125%;font-weight:800;font-size:clamp(32px,5.2vw,64px);line-height:.95;letter-spacing:-.01em;margin:12px 0 0;text-transform:uppercase;text-wrap:balance}
+.head p{max-width:46ch;color:var(--mute);margin:0}
+h3{font-family:var(--wide);font-stretch:110%;font-weight:700;font-size:21px;line-height:1.2;margin:0}
+
+/* research hub */
+.thesis{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);gap:28px;margin-bottom:28px}
+@media (max-width:900px){.thesis{grid-template-columns:minmax(0,1fr)}}
+.q{background:linear-gradient(135deg,#1A2547,#0E121C 70%);border:1px solid #2B3963;border-radius:22px;padding:30px}
+.q p.big{font-family:var(--wide);font-stretch:105%;font-weight:600;font-size:clamp(21px,2.4vw,28px);line-height:1.25;margin:12px 0 0}
+.q p.sm{color:var(--mute);font-size:15px;margin:14px 0 0}
+.papers{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+.papers li{display:grid;grid-template-columns:44px minmax(0,1fr);gap:12px;align-items:start;background:var(--deck);border:1px solid var(--edge);border-radius:14px;padding:14px 16px}
+.papers .n{font-family:var(--mono);font-size:12px;color:var(--volt-2);padding-top:3px}
+.papers b{display:block;font-size:15.5px}
+.papers span{display:block;font-size:13.5px;color:var(--mute)}
+.studies{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+@media (max-width:900px){.studies{grid-template-columns:minmax(0,1fr)}}
+.st{background:var(--panel);border:1px solid var(--edge);border-radius:20px;padding:24px;display:flex;flex-direction:column;gap:12px;min-width:0}
+.st .top{display:flex;justify-content:space-between;align-items:center;gap:10px}
+.pill{display:inline-flex;align-items:center;gap:7px;font-family:var(--mono);font-size:11.5px;letter-spacing:.06em;text-transform:uppercase;padding:5px 10px;border-radius:999px;border:1px solid var(--edge);color:var(--mute)}
+.pill i{width:8px;height:8px;border-radius:50%;background:var(--mute);display:block}
+.pill.open{color:var(--open);border-color:rgba(255,181,71,.4)}.pill.open i{background:var(--open);box-shadow:0 0 0 4px rgba(255,181,71,.15)}
+.pill.soon i{background:var(--volt-2)}
+.st p{margin:0;color:var(--mute);font-size:15px}
+.st dl{display:grid;grid-template-columns:auto minmax(0,1fr);gap:4px 14px;margin:2px 0 0;font-size:14px}
+.st dt{color:var(--mute);font-family:var(--mono);font-size:12px;padding-top:2px}
+.st dd{margin:0}
+.st .btn{margin-top:auto;align-self:flex-start}
+.ethics{margin-top:22px;font-size:13.5px;color:var(--mute);border-left:3px solid var(--volt);padding:4px 0 4px 14px;max-width:80ch}
+
+/* forms */
+.formgrid{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:36px;align-items:start}
+@media (max-width:900px){.formgrid{grid-template-columns:minmax(0,1fr)}}
+.tabs{display:flex;gap:6px;background:var(--deck);border:1px solid var(--edge);border-radius:999px;padding:5px;margin-bottom:18px;flex-wrap:wrap}
+.tabs button{flex:1;min-width:120px;font:inherit;font-size:14px;font-weight:700;padding:10px 14px;border-radius:999px;border:0;background:transparent;color:var(--mute);cursor:pointer}
+.tabs button[aria-selected="true"]{background:var(--text);color:var(--night)}
+form{background:var(--panel);border:1px solid var(--edge);border-radius:22px;padding:26px;display:grid;gap:14px}
+.row{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+@media (max-width:560px){.row{grid-template-columns:minmax(0,1fr)}}
+label{display:grid;gap:6px;font-size:13.5px;font-weight:600;color:#C9D0DE}
+input,select,textarea{font:inherit;font-size:15px;color:var(--text);background:var(--night);border:1px solid var(--edge);border-radius:12px;padding:12px 14px;width:100%}
+textarea{min-height:120px;resize:vertical}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--volt);box-shadow:0 0 0 3px rgba(91,134,255,.25)}
+.chk{display:flex;gap:10px;align-items:flex-start;font-weight:500;font-size:13.5px;color:var(--mute)}
+.chk input{width:18px;height:18px;margin-top:2px;flex:none;accent-color:var(--volt)}
+.msg{display:none;font-size:14.5px;padding:12px 14px;border-radius:12px}
+.msg.ok{display:block;background:rgba(91,134,255,.12);border:1px solid rgba(91,134,255,.4)}
+.msg.err{display:block;background:rgba(255,120,120,.1);border:1px solid rgba(255,120,120,.4)}
+.side{display:grid;gap:12px}
+.cd{background:var(--deck);border:1px solid var(--edge);border-radius:16px;padding:16px 18px;display:grid;gap:4px;min-width:0}
+.cd span{font-family:var(--mono);font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--mute)}
+.cd a,.cd b{font-weight:700;text-decoration:none;overflow-wrap:anywhere}
+.cd a:hover{color:var(--volt-2)}
+
+/* work */
+.tools{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-bottom:44px}
+@media (max-width:900px){.tools{grid-template-columns:minmax(0,1fr)}}
+.tool{position:relative;border:1px solid var(--edge);border-radius:20px;padding:24px;background:var(--deck);display:flex;flex-direction:column;gap:10px;min-width:0;overflow:hidden}
+.tool::before{content:"";position:absolute;inset:0 0 auto;height:3px;background:linear-gradient(90deg,var(--volt),transparent)}
+.tool h3 small{font-family:var(--mono);font-weight:400;font-size:12px;color:var(--mute);margin-left:8px}
+.tool p{margin:0;color:var(--mute);font-size:15px}
+.lk{display:flex;flex-wrap:wrap;gap:8px 16px;margin-top:auto;padding-top:6px}
+.lk a{font-family:var(--mono);font-size:12.5px;text-decoration:none;color:var(--volt-2);border-bottom:1px solid rgba(157,182,255,.4);overflow-wrap:anywhere}
+.lk a:hover{color:#fff}
+.cols2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:40px}
+@media (max-width:900px){.cols2{grid-template-columns:minmax(0,1fr)}}
+.list{list-style:none;margin:14px 0 0;padding:0}
+.list li{display:grid;grid-template-columns:76px minmax(0,1fr);gap:14px;padding:14px 0;border-top:1px solid var(--edge)}
+.list .y{font-family:var(--mono);font-size:12.5px;color:var(--mute);padding-top:3px}
+.list b{display:block;font-size:15.5px;line-height:1.4}
+.list span{display:block;font-size:14px;color:var(--mute)}
+.list a{color:var(--volt-2);font-family:var(--mono);font-size:12.5px;overflow-wrap:anywhere}
+
+/* ventures */
+.vgrid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+@media (max-width:1000px){.vgrid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:600px){.vgrid{grid-template-columns:minmax(0,1fr)}}
+.fx{grid-column:1/-1;display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:24px;align-items:center;background:radial-gradient(120% 140% at 100% 0%,#1F3480 0%,#101629 45%,var(--deck) 75%);border:1px solid #2B3963;border-radius:24px;padding:32px}
+@media (max-width:760px){.fx{grid-template-columns:minmax(0,1fr)}}
+.fx h3{font-size:clamp(30px,4.4vw,52px);font-stretch:125%;font-weight:900;text-transform:uppercase;line-height:.95}
+.fx p{color:#C9D0DE;margin:12px 0 0}
+.chips{display:flex;flex-wrap:wrap;gap:8px;list-style:none;margin:16px 0 0;padding:0}
+.chips li{font-size:13px;font-weight:700;padding:6px 12px;border-radius:999px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12)}
+.spec{font-family:var(--mono);font-size:13px;display:grid;gap:8px}
+.spec div{display:flex;justify-content:space-between;gap:12px;border-bottom:1px dashed rgba(255,255,255,.14);padding-bottom:8px}
+.spec span{color:var(--mute)}
+.vc{background:var(--deck);border:1px solid var(--edge);border-radius:20px;padding:22px;display:flex;flex-direction:column;gap:8px;min-width:0}
+.vc .m{display:flex;justify-content:space-between;font-family:var(--mono);font-size:12px;color:var(--mute)}
+.vc h3{font-size:18px}
+.vc .r{font-weight:700;font-size:14px;color:var(--volt-2);margin:0}
+.vc p{margin:0;color:var(--mute);font-size:14.5px}
+
+/* moments */
+.gal{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:12px}
+.gal figure{margin:0;position:relative;overflow:hidden;border-radius:18px;border:1px solid var(--edge);min-width:0;background:var(--deck)}
+.gal img{display:block;width:100%;height:100%;object-fit:cover;max-width:100%;transition:transform .6s ease}
+.gal figure:hover img{transform:scale(1.04)}
+.g1{grid-column:span 7;aspect-ratio:16/10}.g2{grid-column:span 5;aspect-ratio:auto}
+.g3,.g4,.g5{grid-column:span 4;aspect-ratio:4/5}
+.gal figcaption{position:absolute;inset:auto 0 0 0;padding:40px 14px 12px;font-weight:700;font-size:14px;background:linear-gradient(transparent,rgba(5,7,12,.9))}
+.gal figcaption small{display:block;font-family:var(--mono);font-weight:400;font-size:11px;color:var(--mute)}
+@media (max-width:760px){.gal{grid-template-columns:repeat(2,minmax(0,1fr))}.g1{grid-column:1/-1}.g2,.g3,.g4,.g5{grid-column:span 1;aspect-ratio:4/5}}
+
+/* academy strip */
+.acad{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px}
+@media (max-width:900px){.acad{grid-template-columns:minmax(0,1fr)}}
+.acad ul{list-style:none;margin:12px 0 0;padding:0}
+.acad li{padding:9px 0;border-top:1px solid var(--edge);font-size:15px}
+.acad li span{color:var(--mute)}
+
+footer{padding-block:28px 34px}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;font-size:13px;color:var(--mute)}
+
+/* === 2026 EDITORIAL GOLD EDITION — full cross-site design system === */
+:root{
+  --night:#080807;--deck:#10100F;--panel:#161511;--edge:#373026;
+  --text:#F7F3EA;--mute:#B3AA99;--volt:#D4AC65;--volt-2:#EBD099;--open:#E7BB6A;
+  --wide:"Cormorant Garamond",Georgia,serif;
+  --body:"Manrope","Segoe UI",sans-serif;
+  --maxw:1232px;
+}
+html{scroll-padding-top:84px}body{background:var(--night);background-image:radial-gradient(ellipse at 85% 0%,rgba(190,135,53,.07),transparent 35%)}
+::selection{background:#BD9855;color:#090806}
+.k{font-family:var(--mono);font-size:11px;letter-spacing:.19em;color:var(--volt-2)}
+.bar{background:rgba(8,8,7,.89);border-bottom:1px solid rgba(230,196,136,.2);box-shadow:0 8px 30px rgba(0,0,0,.18)}
+.bar .wrap{padding-block:14px}.brand{font-family:var(--body);font-size:12px;font-weight:800;letter-spacing:.19em}.brand svg{width:38px;height:38px}
+.bar nav a{font-size:12px;letter-spacing:.05em;color:#D8CEBC}
+.bar nav a:hover{color:var(--volt-2);background:rgba(212,172,101,.08)}
+.bar nav a.cta{background:linear-gradient(120deg,#AF843C,#E3C484 55%,#BA9251);color:#100C07;font-weight:900}
+.bar nav a.cta:hover{background:#EBD099;color:#100C07}
+.btn{border-color:rgba(229,195,133,.7);border-radius:4px;padding:14px 22px;font-size:13px;letter-spacing:.03em;transition:transform .2s,background .2s,border-color .2s}
+.btn.solid{background:linear-gradient(110deg,#B88B45,#E5C887 52%,#C39952);border-color:#D6B776;color:#161109}
+.btn.solid:hover{background:#F5D895;color:#130F0A}.btn:hover{border-color:#F0D392;color:var(--volt-2)}
+.hero-gold{background:linear-gradient(110deg,#0C0B09 22%,#151109 79%,#0E0C0A 100%);min-height:unset}
+.hero-gold::after{content:"";position:absolute;inset:auto -25% 0 40%;height:75%;pointer-events:none;background:radial-gradient(ellipse,rgba(168,115,40,.12) 0%,transparent 60%)}
+.hero-grain{position:absolute;inset:0;pointer-events:none;opacity:.25;background-image:linear-gradient(100deg,transparent 0,rgba(240,193,103,.09) 1px,transparent 2px);background-size:140px 100%}
+.hero-layout{display:grid!important;grid-template-columns:minmax(0,1.06fr) minmax(0,.85fr);align-items:center;gap:clamp(16px,4vw,58px);min-height:640px!important;padding-block:68px 48px!important;position:relative}
+.hero-copy{position:relative;z-index:2;padding:20px 0}
+.hero-eyebrow{font-family:var(--mono);font-size:10px;letter-spacing:.17em;line-height:1.7;color:#E8C687;display:flex;align-items:center;gap:12px}
+.fine-rule{width:44px;height:1px;background:linear-gradient(90deg,#EACD8D,transparent);display:block}
+.hero-gold h1{font-size:clamp(74px,9.5vw,152px);line-height:.79;letter-spacing:-.05em;text-transform:none;font-family:var(--wide);font-weight:500;margin:31px 0 22px;text-wrap:balance}
+.hero-gold h1 span{display:block;font-size:.56em;letter-spacing:-.045em;line-height:1.0;color:#F7F3E8;font-weight:400;margin:0}
+.hero-gold h1 strong{font-weight:600;display:block;padding-block:.04em;color:#D9B675;background:linear-gradient(110deg,#9D7335,#F4DDA1 39%,#C29550 72%,#E9CF95);background-clip:text;-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.hero-role{font-size:12px;letter-spacing:.11em;text-transform:uppercase;font-weight:700;color:#D5C7B0;line-height:1.8;margin:0 0 28px}
+.hero-role span{color:#B98B40;font-size:8px;padding:0 5px}
+.hero-statement{font-family:var(--wide);font-size:clamp(28px,3.5vw,46px);line-height:1.05;font-weight:500;max-width:18ch;margin:0;color:#F5E9D5}
+.hero-statement em{font-style:italic;color:#C9A05B}
+.hero-gold .lede{font-size:15px;color:#B9B0A0;line-height:1.85;max-width:53ch;margin-top:17px}
+.hero-gold .btns{margin-top:27px}
+.hero-notes{display:flex;flex-wrap:wrap;gap:15px 26px;font-family:var(--mono);font-size:9px;letter-spacing:.11em;color:#978B75;margin-top:44px}
+.hero-visual{position:relative;height:580px;max-width:510px;justify-self:end;width:100%;isolation:isolate;border:1px solid rgba(223,182,107,.22);box-shadow:0 22px 80px rgba(0,0,0,.45);overflow:visible;background:#1B1711}
+.hero-visual::before{content:"";position:absolute;inset:-14px 14px 14px -14px;border:1px solid rgba(211,164,83,.28);z-index:-1}
+.hero-visual::after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(180deg,transparent 50%,rgba(12,9,5,.75) 100%)}
+.hero-visual img{display:block;width:100%;height:100%;object-fit:cover;object-position:50% 41%;filter:saturate(.83) contrast(1.04)}
+.visual-halo{position:absolute;inset:-40px -60px 40px 0;border-radius:50%;z-index:-2;background:radial-gradient(ellipse,rgba(220,170,84,.2) 0,transparent 64%)}
+.portrait-caption{position:absolute;inset:auto 25px 23px 25px;z-index:2;display:flex;align-items:end;gap:14px;color:#EAC989}
+.portrait-caption-line{width:2px;height:54px;background:#CBA45F;flex-shrink:0}
+.portrait-caption>span:nth-child(2){font-family:var(--wide);font-size:32px;font-weight:600;line-height:.83;letter-spacing:.01em}
+.portrait-caption small{font-family:var(--mono);font-size:9px;line-height:1.6;letter-spacing:.11em;color:#C9BA9A;margin-left:auto;text-align:right}
+.stats-gold{margin:0 0 30px;border-top:1px solid rgba(220,178,105,.23)}
+.stats-gold div{padding-block:20px 0}.stats-gold b{font-family:var(--wide);font-weight:600;font-size:clamp(31px,4vw,48px);color:#E7C789}
+.stats-gold span{font-size:12px;color:#BEB4A3}.stats-gold div{border-color:rgba(220,178,105,.2)}
+section{padding-block:105px;border-bottom:1px solid rgba(213,170,93,.16)}
+h2{font-family:var(--wide);font-size:clamp(47px,6.8vw,80px);font-weight:600;letter-spacing:-.025em;line-height:.94;text-transform:none}
+h2 em{font-style:italic;color:#CBA45D;font-weight:500}
+h3{font-family:var(--wide);font-size:26px;letter-spacing:0}
+.head{margin-bottom:38px}.head p{line-height:1.75;font-size:14px}
+.q{background:linear-gradient(130deg,#251E12,#10100E 80%);border-color:#5A452B}.papers li{background:#15130F;border-color:var(--edge)}.papers .n{color:#CEAA72}.st{background:var(--panel);border-color:var(--edge)}
+.st .top .k{color:#CBB07E}.pill.open{color:#E9CB8E;border-color:#9D783F}.pill.open i{background:#D4AC65;box-shadow:0 0 0 4px rgba(212,172,101,.15)}.pill.soon i{background:#BBA47B}
+.ethics{border-left-color:#A7844B}input,select,textarea{border-color:#4B4030;background:#0B0A09}input:focus,select:focus,textarea:focus{border-color:#D6AE68;box-shadow:0 0 0 3px rgba(210,166,93,.2)}.chk input{accent-color:#B99150}
+.tabs button[aria-selected="true"]{background:#E4C587;color:#120E08}.msg.ok{background:rgba(201,160,87,.13);border-color:rgba(201,160,87,.45)}
+.cd,.tool,.vc{background:#141310;border-color:var(--edge)}.cd a:hover{color:#F8DFAB}.lk a,.list a{color:#D9BD84;border-bottom-color:rgba(203,164,94,.4)}.tool::before{background:linear-gradient(90deg,#B08445,#E7C98F 45%,transparent)}
+.fx{background:radial-gradient(110% 160% at 100% 0%,#57401E 0%,#1E1911 42%,#11100E 75%);border-color:#76552D}.fx p{color:#CFC2A9}.spec span{color:#C0AC89}.vc .r{color:#DCC18A}
+.gal figure{border-radius:4px;border-color:#57462C}.gal figcaption{background:linear-gradient(transparent,rgba(12,9,5,.97))}
+.gal img{filter:saturate(.85)}.gal figure:hover img{transform:scale(1.035)}
+/* Override inherited full-screen hero wrapper rules for the statistics rail. */
+.hero-gold .hero-layout{margin-top:0!important;justify-content:initial!important}
+.hero-gold > .wrap:not(.hero-layout){display:block!important;min-height:0!important;margin-top:0!important;padding-block:0!important;justify-content:initial!important}
+[hidden]{display:none!important}
+/* Added first-party portfolio showcase */
+.brands-section{background:radial-gradient(circle at 90% 30%,rgba(205,159,86,.085),transparent 35%),#0C0C0A}
+.brand-intro{display:flex;align-items:center;justify-content:space-between;gap:20px;margin-bottom:19px;padding-top:4px}
+.brand-intro-sub{margin-top:43px}
+.brand-intro-index{font-family:var(--mono);font-size:10px;letter-spacing:.15em;color:#E8C98B;font-weight:600}
+.brand-intro p{font-size:13px;color:#9F9583;margin:0;max-width:60ch}
+.brand-grid{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:13px}
+.brand-card{grid-column:span 2;min-height:285px;padding:27px 25px;display:flex;flex-direction:column;align-items:flex-start;background:linear-gradient(150deg,#211C14,#11100E 75%);border:1px solid #51402B;transition:transform .2s,border-color .2s}
+.brand-card:hover{transform:translateY(-4px);border-color:#AE8650}
+.brand-featured{grid-column:span 4;background:radial-gradient(circle at 95% 10%,rgba(245,197,102,.19),transparent 40%),linear-gradient(145deg,#2A2215,#11100F 75%)}
+.brand-tag{font-family:var(--mono);font-size:9px;color:#CFAF76;letter-spacing:.16em;margin-bottom:29px}
+.brand-card h3{font-family:var(--body);font-weight:800;letter-spacing:.04em;font-size:clamp(19px,2.2vw,26px);line-height:1.15;margin:0;text-transform:uppercase}
+.brand-card h3 .light{font-weight:400;color:#C5AD85}
+.brand-card h3 .gold-mark{color:#E1BC73}
+.brand-card p{font-size:13.5px;line-height:1.75;color:#B5AA97;margin:17px 0 20px;max-width:55ch}
+.brand-card a{font-size:12px;letter-spacing:.02em;font-weight:800;text-decoration:none;color:#ECD29A;margin-top:auto;border-bottom:1px solid rgba(234,200,140,.3);padding-bottom:4px}
+.brand-card a:hover{color:#fff}
+.brand-footer{font:10px var(--mono);letter-spacing:.1em;color:#C9B285;margin-top:auto}
+.brand-wordmark{font-weight:800;font-size:clamp(37px,4.2vw,56px);line-height:1;letter-spacing:-.045em;color:#F4EEE1}
+.brand-wordmark span{color:#D7B36F}.brand-wordmark small{display:block;font-size:10px;letter-spacing:.17em;font-weight:600;color:#BCAD93;margin-top:10px}
+.partners{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px}
+.partners span{min-height:100px;display:flex;justify-content:center;align-items:center;text-align:center;background:#15130F;border:1px solid #4F402A;color:#F3E4C8;font-family:var(--body);letter-spacing:.035em;font-size:clamp(15px,2vw,22px);font-weight:750}
+.brand-disclaimer{max-width:110ch;font-size:12px;line-height:1.85;color:#988E7F;margin:18px 0}.brand-disclaimer strong{color:#D5C2A0;font-weight:600}
+.company-strip{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border:1px solid #57452C;background:#19160F}
+.company-strip>div{padding:20px 22px;min-width:0;border-right:1px solid #57452C}.company-strip>div:last-child{border-right:0}
+.company-strip b{font-size:14px;display:block;color:#F0DFC0}.company-strip small{font-size:11px;color:#B6A993;display:block;margin-top:7px}
+/* Conferences */
+.conference-section{background:linear-gradient(170deg,#0B0A09,#18140F)}
+.conference-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:17px}
+.conference-card{display:flex;flex-direction:column;background:#15130F;border:1px solid #59452A;min-width:0;overflow:hidden}
+.conference-primary{background:#211A10}
+.conference-photo{height:270px;overflow:hidden;background:#221A10}
+.conference-photo img{width:100%;height:100%;object-fit:cover;object-position:center 33%;display:block;transition:transform .4s;filter:saturate(.85)}
+.conference-card:hover img{transform:scale(1.04)}
+.conference-copy{padding:27px 26px 25px;display:flex;flex-direction:column;flex:1;position:relative}
+.conference-copy h3{font-family:var(--wide);font-size:clamp(35px,3.5vw,49px);font-weight:600;line-height:.98;color:#F3E4C9;margin:18px 0 11px}
+.conference-subtitle{font-size:15px!important;font-weight:700;color:#D7B472!important;line-height:1.5!important;margin:0 0 13px!important}
+.conference-copy>p{font-size:13px;line-height:1.75;color:#AFA48F;margin:0 0 18px}
+.conference-foot{font:10px var(--mono);letter-spacing:.05em;color:#8F826B;margin-top:auto;border-top:1px solid #493B2A;padding-top:13px}
+.conference-upcoming{background:radial-gradient(circle at 90% 10%,rgba(192,148,75,.23),transparent 53%),#1E1A12}
+.conference-upcoming .conference-copy{padding-top:30px}.conference-sigil{font:600 100px var(--wide);line-height:1;color:#D5B371;margin:35px 0 10px;letter-spacing:-.13em}.conference-sigil span{color:#615136}
+.conference-link{font-size:12px;font-weight:700;color:#EDCE90;margin:10px 0 30px;text-decoration:none;border-bottom:1px solid #92784E;align-self:flex-start}
+/* Footer and navigation */
+footer{border-top:1px solid #3D3224;background:#080807}footer a{color:#C3AA75;text-decoration:none}
+@media(max-width:1000px){
+ .brand-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.brand-card{grid-column:span 1}.brand-featured{grid-column:span 2}
+ .conference-photo{height:240px}.conference-copy{padding:22px}
+}
+@media(max-width:790px){
+ .hero-layout{grid-template-columns:minmax(0,1fr);padding-top:42px!important;padding-bottom:24px!important;gap:30px}
+ .hero-gold h1{font-size:clamp(68px,18vw,112px)}.hero-visual{height:430px;max-width:420px;width:90%;justify-self:center}
+ .hero-role{font-size:10px}.hero-notes{margin-top:24px}
+ .conference-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.conference-upcoming{grid-column:1/-1}.conference-upcoming .conference-copy{min-height:295px}
+ .company-strip{grid-template-columns:1fr}.company-strip>div{border-bottom:1px solid #57452C;border-right:0}.company-strip>div:last-child{border-bottom:0}
+ .partners{grid-template-columns:repeat(3,minmax(0,1fr))}
+}
+@media(max-width:600px){
+ section{padding-block:70px}.hero-layout{padding-inline:20px!important;display:grid!important}.hero-gold h1{font-size:clamp(60px,18vw,95px)}
+ .hero-visual{height:380px;width:90%}.hero-visual::before{inset:-9px 9px 9px -9px}.portrait-caption small{display:none}
+ .hero-role{letter-spacing:.04em}.hero-eyebrow{font-size:9px}.hero-notes{font-size:8px}.hero-statement{font-size:31px}
+ .brand-grid{grid-template-columns:1fr}.brand-card,.brand-featured{grid-column:1/-1;min-height:250px}
+ .brand-intro{align-items:flex-start;flex-direction:column;gap:8px}.partners{grid-template-columns:repeat(2,minmax(0,1fr))}.partners span{min-height:75px}
+ .conference-grid{grid-template-columns:1fr}.conference-upcoming{grid-column:auto}.conference-photo{height:300px}
+ .bar .wrap{gap:4px}.bar nav a{padding:7px 8px;font-size:11px}.brand{font-size:11px;letter-spacing:.06em}.brand svg{width:30px;height:30px}
+ .stats-gold{margin-bottom:24px}.stats-gold div{padding:14px 10px 8px}.stats-gold b{font-size:37px}
+ .gal .g3,.gal .g4,.gal .g5{grid-column:span 1}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.gal img,.brand-card,.conference-photo img{transition:none}}
+
+</style>
+</head>
+<body>
+
+
+<header class="bar">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Mehdi Alavi, home">
+      <svg viewBox="0 0 64 64" aria-hidden="true"><rect x="1.5" y="1.5" width="61" height="61" rx="16" fill="#15120D" stroke="#6A532B" stroke-width="2"/><path d="M9 38 H18 V18 H23 V46 H28 V38 H35" fill="none" stroke="#F2F4FA" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/><path d="M35 40 L44 17 L53 40 M38.6 31.5 H49.4" fill="none" stroke="#D5AE67" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/></svg>
+      MEHDI ALAVI
+    </a>
+    <nav aria-label="Sections"><ul>
+      <li class="opt"><a href="#research">Research</a></li>
+      <li><a href="#brands">Brands</a></li>
+      <li class="opt"><a href="#work">Work</a></li>
+      <li class="opt"><a href="#conferences">Conferences</a></li>
+      
+      <li><a class="cta" href="#contact">Contact</a></li>
+    </ul></nav>
+  </div>
+</header>
+
+<main id="top">
+  <div class="hero hero-gold" aria-labelledby="hero-title">
+    <div class="hero-grain" aria-hidden="true"></div>
+    <div class="wrap hero-layout">
+      <div class="hero-copy">
+        <p class="hero-eyebrow"><span class="fine-rule" aria-hidden="true"></span> RESEARCH · STRATEGY · INTERNATIONAL VENTURES</p>
+        <h1 id="hero-title"><span>Seyed Mehdi</span><strong>Alavi</strong></h1>
+        <p class="hero-role">PhD Researcher <span>◆</span> Business Strategist <span>◆</span> EMS Industry Leader</p>
+        <p class="hero-statement">Where <em>research</em> meets real-world <em>enterprise.</em></p>
+        <p class="lede">Exploring the decisions behind international growth — while building EMS technology, training and business ecosystems across Europe and Türkiye.</p>
+        <div class="btns"><a class="btn solid" href="#brands">Explore the portfolio <span aria-hidden="true">↗</span></a><a class="btn" href="#research">Discover my research <span aria-hidden="true">↗</span></a></div>
+        <div class="hero-notes"><span>SZÉCHENYI ISTVÁN UNIVERSITY</span><span>EUROPE · TÜRKIYE · INTERNATIONAL MARKETS</span></div>
+      </div>
+      <div class="hero-visual">
+        <div class="visual-halo" aria-hidden="true"></div>
+        <img src="img/executive-portrait.webp" width="515" height="1150" alt="Seyed Mehdi Alavi in a dark jacket and turtleneck" fetchpriority="high">
+        <div class="portrait-caption"><span class="portrait-caption-line"></span><span>INSIGHT<br>INTO ACTION</span><small>RESEARCH • INNOVATION • LEADERSHIP</small></div>
+      </div>
+    </div>
+    <div class="wrap"><div class="stats stats-gold">
+      <div><b>16+</b><span>years in the EMS industry</span></div>
+      <div><b>250+</b><span>trainers certified</span></div>
+      <div><b>3</b><span>European operating companies</span></div>
+      <div><b>3</b><span>open research tools with DOIs</span></div>
+    </div></div>
+  </div>
+
+  <section id="brands" class="brands-section" aria-labelledby="brands-title">
+    <div class="wrap">
+      <div class="head"><div><p class="k">The brand ecosystem</p><h2 id="brands-title">Ideas made <em>operational.</em></h2></div><p>Distinct ventures, proprietary concepts, international trading platforms and manufacturer partnerships. Every role is identified clearly.</p></div>
+      <div class="brand-intro"><div class="brand-intro-index">01 / OWNED &amp; OPERATED</div><p>Companies and initiatives built or managed within the wider EMS portfolio.</p></div>
+      <div class="brand-grid">
+        <article class="brand-card brand-featured"><span class="brand-tag">GROUP PLATFORM</span><div class="brand-wordmark ems-wm">EMS<span>LEADER</span><small>INTERNATIONAL EMS ECOSYSTEM</small></div><p>Equipment, distributor programmes, studio concepts, academy, certification, aftermarket solutions and business support.</p><a href="https://emsleader.eu/" target="_blank" rel="noopener noreferrer" aria-label="Visit EMS Leader">emsleader.eu <span aria-hidden="true">↗</span></a></article>
+        <article class="brand-card"><span class="brand-tag">STUDIO BRAND</span><h3>IMPULSE<span class="light"> EMS GYM</span></h3><p>EMS training, studio operations, customer experience and business development, with roots in Antalya.</p><span class="brand-footer">STUDIOS · TRAINING · CONCEPT</span></article>
+        <article class="brand-card"><span class="brand-tag">PRODUCT DEVELOPMENT</span><h3>FUSION <span class="gold-mark">X1</span></h3><p>Development-stage EMS hardware, suit system and trainer software. Product concept, not a claim of commercial launch.</p><span class="brand-footer">IN DEVELOPMENT</span></article>
+        <article class="brand-card"><span class="brand-tag">EDUCATION</span><h3>EMS LEADER <span class="light">ACADEMY</span></h3><p>Trainer education, EMS professional development, certification offerings and studio onboarding support.</p><a href="https://emsleader.eu/" target="_blank" rel="noopener noreferrer">Explore academy <span aria-hidden="true">↗</span></a></article>
+        <article class="brand-card"><span class="brand-tag">REGIONAL CHANNEL</span><h3>XBODY <span class="light">TÜRKİYE</span></h3><p>Regional sales and professional support channel operated through Impulse Spor. XBody is an independent manufacturer.</p><a href="https://xbodyturkiye.com.tr/" target="_blank" rel="noopener noreferrer">xbodyturkiye.com.tr <span aria-hidden="true">↗</span></a></article>
+      </div>
+      <div class="brand-intro brand-intro-sub"><div class="brand-intro-index">02 / MANUFACTURER PARTNERS</div><p>Independent third-party EMS brands present within the commercial portfolio; scope and availability vary by territory.</p></div>
+      <div class="partners" aria-label="Independent EMS manufacturer brands"><span>XBody</span><span>JustFit</span><span>VisionBody</span><span>WIEMS</span><span>E-Fit</span></div>
+      <p class="brand-disclaimer">XBody, JustFit, VisionBody, WIEMS and E-Fit are separate manufacturer trademarks; inclusion does not imply ownership of those brands. Additional projects and portfolio names include <strong>Self Gym</strong>, <strong>Sherise Heaven / Premium</strong>, <strong>ULTIMA</strong>, <strong>REAL EMS</strong> and <strong>Fusion EMS</strong>; their current commercial status should be confirmed before describing them as active offers.</p>
+      <div class="brand-intro brand-intro-sub"><div class="brand-intro-index">03 / GROUP COMPANIES</div><p>Operating entities behind distribution, education, studio and cross-border business development.</p></div>
+      <div class="company-strip"><div><b>EMS International Kft.</b><small>Hungary · European operations</small></div><div><b>EMS Leader SRL</b><small>Romania · commercial operations</small></div><div><b>Impulse Spor Tekstil Tic. Ltd. Şti.</b><small>Türkiye · regional operations</small></div></div>
+    </div>
+  </section>
+
+  <section id="research">
+    <div class="wrap">
+      <div class="head"><div><p class="k">Research hub</p><h2>When finance<br>meets the clock</h2></div><p>One programme, four papers and a set of open tools. Everything that firms, partners and colleagues need to take part is on this page.</p></div>
+      <div class="thesis">
+        <div class="q">
+          <p class="k">Doctoral programme · Széchenyi István University</p>
+          <p class="big">Strategic flexibility under financial and institutional constraint in equipment-dependent service SMEs.</p>
+          <p class="sm">PhD in Business Administration, SzEEDSM, Győr, from September 2026. EMS training businesses are the empirical setting: firms whose service depends on costly equipment, partners and the right timing.</p>
+        </div>
+        <ul class="papers">
+          <li><span class="n">P1</span><div><b>Partner screening under weak enforceability</b><span>How firms choose franchise and distribution partners when contracts are hard to enforce</span></div></li>
+          <li><span class="n">P2</span><div><b>When is finance an option?</b><span>Whether a financing route can still be used before the decision window closes</span></div></li>
+          <li><span class="n">P3</span><div><b>Partnership architecture as risk allocation</b><span>Who carries equipment and financial risk, and what keeps partnerships alive</span></div></li>
+          <li><span class="n">P4</span><div><b>Transferring a business system without losing control</b><span>Franchise transfer versus licensing in cross-border expansion</span></div></li>
+        </ul>
+      </div>
+
+      <div id="studies">
+        <div class="head" style="margin:56px 0 24px"><div><p class="k">Take part</p><h3 style="font-size:clamp(24px,3vw,34px);text-transform:uppercase;font-stretch:125%">Studies open for participation</h3></div><p>Each study runs on the university-approved survey platform. Your answers go there, not to this website.</p></div>
+        <div class="studies" id="studyList"></div>
+        <p class="ethics">All studies are approved by the Science Ethics Committee of Széchenyi István University (18 September 2026). Participation is voluntary, and you can stop at any time. How answers are stored and protected is explained in the participant information at the start of each study.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="work">
+    <div class="wrap">
+      <div class="head"><div><p class="k">Output</p><h2>Work</h2></div><p>Open software with permanent DOIs, publications, registered protocols and talks.</p></div>
+      <div class="tools">
+        <article class="tool"><h3>Quartile<small>v0.17.0</small></h3><p>A simulated pre-submission review committee for business and economics manuscripts, with statistics checks, reference verification and a reference library.</p><div class="lk"><a href="https://doi.org/10.5281/zenodo.24443341" target="_blank" rel="noopener">10.5281/zenodo.24443341</a><a href="https://github.com/emsleader/quartile" target="_blank" rel="noopener">GitHub</a></div></article>
+        <article class="tool"><h3>ClockBind<small>v2.0.1</small></h3><p>Research statistics for timing attribution: which clock (finance, payment, fulfilment, logistics, institutional or readiness) bound a dated decision.</p><div class="lk"><a href="https://doi.org/10.5281/zenodo.23956441" target="_blank" rel="noopener">10.5281/zenodo.23956441</a><a href="https://malavi-ai.github.io/clockbind/" target="_blank" rel="noopener">Web app</a></div></article>
+        <article class="tool"><h3>ORBIT Gate<small>v1.0.0</small></h3><p>Companion app to the ORBIT framework: when warning signals should send an approved investment back for reappraisal.</p><div class="lk"><a href="https://doi.org/10.5281/zenodo.23620412" target="_blank" rel="noopener">10.5281/zenodo.23620412</a><a href="https://malavi-ai.github.io/orbit-decision-gate/" target="_blank" rel="noopener">Web app</a></div></article>
+      </div>
+      <div class="cols2">
+        <div>
+          <p class="k">Publications</p>
+          <ul class="list">
+            <li><span class="y">2026</span><div><b>Financial strategies and flexibility in the EMS industry: Evidence from European and Middle Eastern operators</b><span>XVIII. Pécsi Pénzügyi Napok, University of Pécs, pp. 295–301 · <a href="https://doi.org/10.15170/XVIIPPN-Tk-KTK-2026-20" target="_blank" rel="noopener">10.15170/XVIIPPN-Tk-KTK-2026-20</a></span></div></li>
+            <li><span class="y">2025</span><div><b>Financial strategies and flexibility in the EMS industry</b><span>Chapter in <i>Young Researchers in Economics</i>, Budapest Metropolitan University, pp. 16–25 · ISBN 978-615-5459-61-0</span></div></li>
+            <li><span class="y">2026</span><div><b>Journal articles on SME finance, enterprise surveys and EMS service markets</b><span>Several manuscripts under review or in revision</span></div></li>
+          </ul>
+          <p class="k" style="margin-top:34px">Methods &amp; protocols</p>
+          <ul class="list">
+            <li><span class="y">2026</span><div><b>Evidence-Graded Bounds Analysis (EGBA), with EGBA-Time</b><span><a href="https://doi.org/10.5281/zenodo.24247230" target="_blank" rel="noopener">10.5281/zenodo.24247230</a></span></div></li>
+            <li><span class="y">2026</span><div><b>Before the Financing Choice: systematic review protocol</b><span><a href="https://doi.org/10.5281/zenodo.24042038" target="_blank" rel="noopener">10.5281/zenodo.24042038</a></span></div></li>
+            <li><span class="y">2026</span><div><b>Financing decisions in equipment-dependent service SMEs: scoping review protocol</b><span><a href="https://doi.org/10.5281/zenodo.24042293" target="_blank" rel="noopener">10.5281/zenodo.24042293</a></span></div></li>
+            <li><span class="y">2026</span><div><b>Which Clock Binds? Protocol 4.0 (preregistration)</b><span><a href="https://doi.org/10.5281/zenodo.23917805" target="_blank" rel="noopener">10.5281/zenodo.23917805</a></span></div></li>
+          </ul>
+        </div>
+        <div>
+          <p class="k">Talks · 2026</p>
+          <ul class="list">
+            <li><span class="y">26 Nov</span><div><b>Adapting payment and partnership models across countries: Lessons from the EMS training industry</b><span>AGTECO 2026, Neumann János University</span></div></li>
+            <li><span class="y">20–22 Nov</span><div><b>From financial availability to decision-time usability: A route-by-episode framework for equipment-dependent SMEs</b><span>GAME 2026, Vienna · oral presentation</span></div></li>
+            <li><span class="y">12 Nov</span><div><b>From performance signals to managerial decisions: The ORBIT constraint-gated framework</b><span>Day of Hungarian Science, BGE Budapest</span></div></li>
+            <li><span class="y">10 Nov</span><div><b>A decision-architecture view of strategic flexibility</b><span>AUAP 2026, Kecskemét</span></div></li>
+          </ul>
+          <p class="k" style="margin-top:34px">Education &amp; credentials</p>
+          <ul class="list">
+            <li><span class="y">2026–</span><div><b>PhD candidate, Business Administration</b><span>Széchenyi István University, Győr</span></div></li>
+            <li><span class="y">2026</span><div><b>MBA</b><span>Budapest Metropolitan University</span></div></li>
+            <li><span class="y">2003</span><div><b>B.Sc. Agricultural Engineering</b><span>Islamic Azad University</span></div></li>
+            <li><span class="y">Certs</span><div><b>EMS Master Trainer · Justfit Master Trainer · NFPT CPT · EREPS EQF 4</b><span>DSSV member · Persian, English, Turkish; Hungarian and German basic</span></div></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="ventures">
+    <div class="wrap">
+      <div class="head"><div><p class="k">The field</p><h2>Ventures</h2></div><p>Group operations and proprietary development across Hungary, Romania and Türkiye — the real-world context behind the research.</p></div>
+      <div class="vgrid">
+        <article class="fx">
+          <div><p class="k">In development</p><h3>Fusion X1</h3><p>A development-stage EMS ecosystem: planned wireless device, dry-electrode suit and trainer software for individual and multi-station sessions.</p><ul class="chips"><li>Sport</li><li>Beauty</li><li>Equestrian</li><li>Further applications · planned</li></ul></div>
+          <div class="spec"><div><span>Stations</span><b>up to 7</b></div><div><span>Programmes</span><b>fixed Hz · per-muscle µs</b></div><div><span>Suit</span><b>dry electrodes</b></div><div><span>Customers</span><b>studios &amp; partners</b></div></div>
+        </article>
+        <article class="vc"><div class="m"><span>Romania</span><span>2024–</span></div><h3>EMS Leader SRL</h3><p class="r">Founder &amp; Managing Director</p><p>Umbrella brand: demo studios, academy, franchise and co-investment partnerships.</p></article>
+        <article class="vc"><div class="m"><span>Hungary</span><span>2023–</span></div><h3>EMS International Kft.</h3><p class="r">Co-Founder &amp; Managing Director</p><p>European operations and distribution for fitness, beauty and physiotherapy.</p></article>
+        <article class="vc"><div class="m"><span>Türkiye</span><span>2018–</span></div><h3>Impulse Spor · XBody Türkiye</h3><p class="r">Managing Partner</p><p>EMS distribution, studio concepts, training and apparel across regional markets. XBody is a partner manufacturer.</p></article>
+        <article class="vc"><div class="m"><span>Middle East</span><span>2010–2017</span></div><h3>EMS consultant</h3><p class="r">Independent</p><p>Studio launches, trainer education, business models and sourcing.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section id="conferences" class="conference-section" aria-labelledby="conference-heading">
+    <div class="wrap">
+      <div class="head"><div><p class="k">Scholarship in public</p><h2 id="conference-heading">Conference <em>highlights.</em></h2></div><p>Sharing conceptual frameworks at the intersection of management science, strategic flexibility, business economics and technological innovation.</p></div>
+      <div class="conference-grid">
+        <article class="conference-card conference-primary"><div class="conference-photo"><img src="img/orbit-bge.webp" alt="Presenting the ORBIT research framework at Budapest University of Economics and Business" width="1122" height="1402" loading="lazy"></div><div class="conference-copy"><span class="k">12 NOV 2026 · BUDAPEST</span><h3>ORBIT</h3><p class="conference-subtitle">From Performance Signals to Managerial Decisions</p><p>Conceptual research presented at Budapest University of Economics and Business as part of the Day of Hungarian Science.</p><span class="conference-foot">BGE · SZÉCHENYI ISTVÁN UNIVERSITY</span></div></article>
+        <article class="conference-card"><div class="conference-photo"><img src="img/auap-conference.webp" alt="38th AUAP Annual Conference presentation poster featuring Seyed Mehdi Alavi" width="1122" height="1402" loading="lazy"></div><div class="conference-copy"><span class="k">9–10 NOV 2026 · LAKITELEK</span><h3>38th AUAP</h3><p class="conference-subtitle">Strategic Flexibility under Institutional Constraint</p><p>A decision-architecture framework for equipment-dependent service SMEs expanding across Eurasian markets.</p><span class="conference-foot">ANNUAL CONFERENCE · HUNGARY</span></div></article>
+        <article class="conference-card conference-upcoming"><div class="conference-copy"><span class="k">26 NOV 2026 · KECSKEMÉT</span><div class="conference-sigil" aria-hidden="true">A<span>G</span></div><h3>AGTECO 2026</h3><p class="conference-subtitle">Academic conference</p><p>Upcoming scientific conference at John von Neumann University. Participation details and any specific presentation will be updated once confirmed.</p><a class="conference-link" href="https://agteco.nje.hu/2026" target="_blank" rel="noopener noreferrer">Official conference site <span aria-hidden="true">↗</span></a><span class="conference-foot">UPCOMING · 26 NOVEMBER</span></div></article>
+      </div>
+    </div>
+  </section>
+
+  <section id="moments">
+    <div class="wrap">
+      <div class="head"><div><p class="k">On the road</p><h2>Moments</h2></div></div>
+      <div class="gal">
+        <figure class="g1"><img src="img/bge.jpg" alt="Conference hall, Day of Hungarian Science, BGE Budapest" loading="lazy"><figcaption>Presenting ORBIT<small>Day of Hungarian Science · BGE · Nov 2026</small></figcaption></figure>
+        <figure class="g2"><img src="img/graduation.jpg" alt="MBA graduation ceremony" loading="lazy" style="aspect-ratio:auto;height:100%;object-position:50% 30%"><figcaption>MBA graduation<small>Budapest Metropolitan University</small></figcaption></figure>
+        <figure class="g3"><img src="img/fibo.jpg" alt="Trade visitor badge at FIBO" loading="lazy"><figcaption>FIBO<small>Cologne · Apr 2026</small></figcaption></figure>
+        <figure class="g4"><img src="img/ispo.jpg" alt="Visitor badge at ISPO Munich" loading="lazy"><figcaption>ISPO<small>Munich · Dec 2024</small></figcaption></figure>
+        <figure class="g5"><img src="img/xbody.jpg" alt="At the XBody headquarters building" loading="lazy"><figcaption>XBody headquarters<small>Partner visit</small></figcaption></figure>
+        <figure class="g3"><img src="img/conference-bge.webp" alt="Seyed Mehdi Alavi at the BGE conference photo wall" loading="lazy"><figcaption>Academic dialogue<small>BGE · Budapest · November 2026</small></figcaption></figure>
+        <figure class="g4"><img src="img/research-event.webp" alt="At the Budapest research event" loading="lazy"><figcaption>Research networking<small>Budapest · November 2026</small></figcaption></figure>
+        <figure class="g5"><img src="img/impulse-studio.webp" alt="The Impulse EMS Gym studio in Antalya" loading="lazy"><figcaption>Impulse EMS Gym<small>Antalya · Türkiye</small></figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" style="border-bottom:0">
+    <div class="wrap">
+      <div class="head"><div><p class="k">Get in touch</p><h2>Contact</h2></div><p>Research collaboration, interviews, partnerships or a question about EMS: choose a topic and send a message.</p></div>
+      <div class="formgrid">
+        <div>
+          <div class="tabs" role="tablist" aria-label="Message type">
+            <button type="button" role="tab" id="tab-contact" aria-selected="true" data-tab="contact">Message</button>
+            <button type="button" role="tab" id="tab-interview" aria-selected="false" data-tab="interview">Interview request</button>
+          </div>
+          <form id="f" novalidate>
+            <input type="hidden" name="_type" id="ftype" value="contact">
+            <input type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px">
+            <div class="row">
+              <label for="fname">Name<input id="fname" name="name" autocomplete="name" required></label>
+              <label for="femail">Email<input id="femail" name="email" type="email" autocomplete="email" required></label>
+            </div>
+            <div class="row" id="ivRow" hidden>
+              <label for="forg">Company or studio<input id="forg" name="organisation" autocomplete="organization"></label>
+              <label for="fcountry">Country<input id="fcountry" name="country" autocomplete="country-name"></label>
+            </div>
+            <div class="row" id="ivRow2" hidden>
+              <label for="frole">Your role<select id="frole" name="role"><option value="">Choose…</option><option>Owner / managing director</option><option>Franchisee or partner</option><option>Manager</option><option>Supplier or distributor</option><option>Researcher</option><option>Other</option></select></label>
+              <label for="fmode">Preferred format<select id="fmode" name="format"><option>Video call</option><option>Phone</option><option>In person (Budapest)</option><option>In person (Antalya)</option><option>Written answers</option></select></label>
+            </div>
+            <label for="ftopic" id="topicWrap">Topic<select id="ftopic" name="topic"><option>Research collaboration</option><option>Study participation</option><option>EMS business or partnership</option><option>Speaking or media</option><option>Other</option></select></label>
+            <label for="fmsg"><span id="msgLabel">Message</span><textarea id="fmsg" name="message" required></textarea></label>
+            <label class="chk" for="fconsent"><input type="checkbox" id="fconsent" name="consent" required><span id="consentText">I agree that my name, email and message are used only to answer this request and are not shared with third parties.</span></label>
+            <button class="btn solid" type="submit" id="fsend">Send message</button>
+            <div class="msg" id="fmsgbox" role="status" aria-live="polite"></div>
+          </form>
+        </div>
+        <div class="side">
+          <div class="cd"><span>Business</span><a href="mailto:m.alavi@emsinternational.eu">m.alavi@emsinternational.eu</a></div>
+          <div class="cd"><span>Academic</span><a href="mailto:alavi.seyed.mehdi@student.sze.hu">alavi.seyed.mehdi@student.sze.hu</a></div>
+          <div class="cd"><span>ORCID</span><a href="https://orcid.org/0009-0003-8430-211X" target="_blank" rel="noopener">0009-0003-8430-211X</a></div>
+          <div class="cd"><span>LinkedIn</span><a href="https://www.linkedin.com/in/seyed-mehdi-alavi-mba-4a2404168" target="_blank" rel="noopener">seyed-mehdi-alavi</a></div>
+          <div class="cd"><span>Company</span><a href="https://www.emsleader.eu" target="_blank" rel="noopener">emsleader.eu</a></div>
+          <div class="cd"><span>Code</span><a href="https://github.com/malavi-ai" target="_blank" rel="noopener">github.com/malavi-ai</a></div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<footer><div class="wrap"><span>© 2026 Seyed Mehdi Alavi · mehdialavi.me · <a href="privacy.html">Privacy</a></span><span>Göd, Hungary · Antalya, Türkiye</span></div></footer>
+
+<script src="config.js"></script>
+<script>
+/* ===== SITE SETTINGS: edit here only =====
+   FORM_ENDPOINT: the form service address (e.g. Formspree "https://formspree.io/f/xxxx" or a GoHighLevel inbound webhook).
+   STUDIES: add a study and its survey link; the card switches from "Opening soon" to "Open" automatically. */
+var CONFIG = window.SITE_CONFIG || {};
+var FORM_ENDPOINT = CONFIG.WORKER_URL ? CONFIG.WORKER_URL.replace(/\/$/,'') + "/form" : "";
+var BOOKING_URL = CONFIG.BOOKING_URL || "";
+var STUDIES = [
+  { id:"shared", title:"EMS business decisions survey", who:"Owners and managers of EMS, fitness, beauty and physiotherapy businesses", time:"shown at the start of the survey", lang:"English and local languages", papers:"P1, P2, P3", url:"",
+    text:"Partner choice, financing routes and how risk is shared with partners. Includes a short choice task." },
+  { id:"interview", title:"Cross-border expansion interviews", who:"Brand owners, franchisors, master licensees and distributors", time:"agreed with you", lang:"English, Turkish or Persian", papers:"P4", url:"#contact", interview:true,
+    text:"How business systems are transferred to partners in other countries, and how control is kept." },
+  { id:"followup", title:"Follow-up interviews", who:"Survey participants who agree to a follow-up", time:"agreed with you", lang:"English and local languages", papers:"P2, P3", url:"#contact", interview:true,
+    text:"A short conversation about one recent equipment or financing decision, in your own words." }
+];
+(function(){
+  var list=document.getElementById('studyList');
+  STUDIES.forEach(function(s){
+    if(s.id==="shared" && CONFIG.SURVEY_URLS && CONFIG.SURVEY_URLS.shared) s.url="join.html?study=shared";
+    var open=!!s.url, a=document.createElement('article'); a.className='st';
+    a.innerHTML='<div class="top"><span class="pill '+(open?'open':'soon')+'"><i></i>'+(open?(s.interview?'Booking':'Open'):'Opening soon')+'</span><span class="k" style="letter-spacing:.08em">'+s.papers+'</span></div>'+
+      '<h3>'+s.title+'</h3><p>'+s.text+'</p><dl><dt>Who</dt><dd>'+s.who+'</dd><dt>Time</dt><dd>'+s.time+'</dd><dt>Languages</dt><dd>'+s.lang+'</dd></dl>';
+    var b=document.createElement('a'); b.className='btn'+(open?' solid':'');
+    if(s.interview && BOOKING_URL){b.href=BOOKING_URL+(BOOKING_URL.indexOf('?')>-1?'&':'?')+'study='+s.id;b.target='_blank';b.rel='noopener';b.className='btn solid';b.textContent='Book a time';}
+    else if(s.interview){b.href='#contact';b.textContent='Request an interview';b.dataset.tab='interview';}
+    else if(open){b.href=s.url;b.textContent='Start the survey';}
+    else{b.href='#contact';b.textContent='Notify me when it opens';b.dataset.topic='Study participation';}
+    a.appendChild(b); list.appendChild(a);
+  });
+
+  var ftype=document.getElementById('ftype'), iv=[document.getElementById('ivRow'),document.getElementById('ivRow2')],
+      topicWrap=document.getElementById('topicWrap'), msgLabel=document.getElementById('msgLabel'), send=document.getElementById('fsend'),
+      consent=document.getElementById('consentText');
+  function setTab(t){
+    document.querySelectorAll('.tabs button').forEach(function(x){x.setAttribute('aria-selected',x.dataset.tab===t?'true':'false')});
+    ftype.value=t; var isIv=t==='interview';
+    iv.forEach(function(r){r.hidden=!isIv}); topicWrap.hidden=isIv;
+    msgLabel.textContent=isIv?'Which study, and a few words about your business':'Message';
+    send.textContent=isIv?'Request interview':'Send message';
+    consent.textContent=isIv?'I agree to be contacted about a research interview. My details are used only to arrange the interview, under the university research privacy notice, and are not shared.':'I agree that my name, email and message are used only to answer this request and are not shared with third parties.';
+  }
+  document.querySelectorAll('.tabs button').forEach(function(b){b.addEventListener('click',function(){setTab(b.dataset.tab)})});
+  document.addEventListener('click',function(e){var a=e.target.closest('a[data-tab],a[data-topic]'); if(!a)return;
+    if(a.dataset.tab)setTab(a.dataset.tab); if(a.dataset.topic){setTab('contact');document.getElementById('ftopic').value=a.dataset.topic;}});
+
+  var f=document.getElementById('f'), box=document.getElementById('fmsgbox');
+  f.addEventListener('submit',function(e){
+    e.preventDefault(); box.className='msg';
+    if(!f.checkValidity()){box.className='msg err';box.textContent='Please fill in your name, a valid email, a message, and tick the consent box.';return;}
+    if(!FORM_ENDPOINT){
+      var data=new FormData(f);var subject=(ftype.value==='interview'?'Research interview request':'Website enquiry')+' — mehdialavi.me';
+      var lines=['Name: '+(data.get('name')||''),'Email: '+(data.get('email')||''),'Type: '+(data.get('_type')||''),'Organisation: '+(data.get('organisation')||''),'Country: '+(data.get('country')||''),'Role: '+(data.get('role')||''),'Format: '+(data.get('format')||''),'Topic: '+(data.get('topic')||''),'','Message:',data.get('message')||''];
+      var uri='mailto:m.alavi@emsinternational.eu?subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent(lines.join('\n'));
+      box.className='msg ok';box.textContent='Your email application will open with this request. Please send the email there to complete the enquiry.';
+      window.location.href=uri;return;
+    }
+    send.disabled=true; send.textContent='Sending…';
+    var data={}; new FormData(f).forEach(function(v,k){data[k]=v}); data.ref=new URLSearchParams(location.search).get('r')||''; data.page=location.pathname;
+    fetch(FORM_ENDPOINT,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(data)})
+      .then(function(r){if(!r.ok)throw 0; box.className='msg ok'; box.textContent='Thank you. Your request has arrived; you will get a reply by email.'; f.reset(); setTab(ftype.value);})
+      .catch(function(){box.className='msg err'; box.textContent='The message could not be sent. Please email m.alavi@emsinternational.eu directly.';})
+      .finally(function(){send.disabled=false; send.textContent=ftype.value==='interview'?'Request interview':'Send message';});
+  });
+})();
+</script>
+
+</body>
+</html>
