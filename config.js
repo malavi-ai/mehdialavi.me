@@ -5,7 +5,7 @@
    STUDY_INFO   : short participant information shown before the survey starts */
 window.SITE_CONFIG = {
   WORKER_URL: "https://forms.mehdialavi.me",
-  BOOKING_URL: "",
+  BOOKING_URL: "https://api.leadconnectorhq.com/widget/booking/Do2sQ3zvGxBVIE6OdiBr",
   SURVEY_URLS: {
     shared: "https://mehdialavi90.limesurvey.net/436178"
   },
